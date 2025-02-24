@@ -9,14 +9,26 @@
 <body>
     <div class="container">
         <div class="clock">
-         <ul>
-            <li id="hours">19</li>
-            <li class="point">:</li>
-            <li id="minutes">05</li>
-            <li class="point">:</li>
-            <li id="sec">30</li>   
-        </ul>
-    </div>
+            <ul>
+                <li id="hours">19</li>
+                <li id="point">:</li>
+                <li id="minutes">05</li>
+                <li id="point">:</li>
+                <li id="sec">30</li>
+                <li id="ampm" class="ampm"></li>
+            </ul>
+        </div>
+        <div class="date" id="date">Lundi 24 Février 2025</div>
+        
+        <div class="controls">
+            <button id="format-toggle">Mode 12 heures</button>
+            <button id="theme-toggle">Mode Clair</button>
+        </div>
+        
+        <div class="file-upload">
+            <label for="image-upload" id="file-upload-label">Télecharger l'image d'arrière-plan</label>
+            <input type="file" id="image-upload" accept="image/*">
+        </div>
     </div>
 
     <script src="script.js"></script>
